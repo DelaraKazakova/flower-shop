@@ -1,0 +1,135 @@
+body {
+  background-color: #f0f0f0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+}
+
+li {
+  list-style: none;
+}
+
+.navbar-brand,
+h1,
+h3 {
+  font-family: 'Unna', serif;
+  font-weight: bold;
+}
+
+h2 {
+  font-family: 'Sacramento', cursive;
+}
+
+.nav-item {
+  font-family: 'Montserrat', sans-serif;
+}
+
+header {
+  background: url(../img/bg.png);
+  background-size: cover;
+}
+
+header>.container-fluid {
+  height: 100vh;
+  min-height: 60rem;
+}
+
+
+header .btn:first-of-type,
+section#contact .btn {
+  background-color: #ff3a5b;
+}
+
+.container-fluid {
+  padding: 1% 0;
+}
+
+.container {
+  margin: 5% auto;
+}
+
+.bouquet {
+  position: absolute;
+  right: 0;
+}
+
+.bg-pink {
+  background-color: #e08e9c;
+  background-image: url(../img/bg-pink.png);
+  background-size: contain;
+  color: white;
+}
+
+.product-card {
+  width: 18rem;
+  margin: auto;
+}
+
+.product-card .container {
+  min-height: 18rem;
+}
+
+.product-card .circle {
+  background-color: #efd0ca;
+  width: 14rem;
+  height: 14rem;
+}
+
+.product-card .btn {
+  background-color: #a3aa68;
+}
+
+section#about {
+  background-color: #efd0ca;
+  background-image: url(../img/Texture.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: contain;
+}
+
+section#blog {
+  background-image: url(../img/leafs.png);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+
+footer .text-light,
+.btn-dark {
+  color: #efd0ca !important;
+}
+
+
+@media (max-width: 991px) {
+  header>.container-fluid {
+    height: auto;
+  }
+
+  .bouquet {
+    position: relative;
+    right: -6rem;
+  }
+
+  section#contact .roses {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    opacity: 0.75;
+  }
+}
+
+@media (max-width: 575px) {
+  .col {
+    min-width: 90% !important;
+  }
+
+  .bouquet {
+    position: relative;
+    right: -1rem;
+  }
+
+  section#contact .roses {
+    opacity: 0.5;
+  }
+}
